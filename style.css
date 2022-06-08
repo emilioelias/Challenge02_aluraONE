@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+
+#logoAlura {
+    position: absolute;
+    margin: 0px 40px 40px 40px;
+}
+
+#canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+#imagenAhorcado {
+    padding: 10px;
+}
+
+#mensajeGP {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+}
+
+#palabraAdivinar {
+    position: relative;
+    text-align: center;
+    height: 40px;
+    padding: auto;
+}
+
+#palabraAdivinar span {
+
+    vertical-align: bottom;
+    font-size: 40px;
+    border-bottom: 2px solid #0A3871;
+    width: 50px;
+    /*ancho del caracter*/
+    text-align: center;
+    margin-right: 8px;
+    display: inline-block;
+    /*sin esto no se puede determinar el ancho*/
+}
+
+#botonLetras {
+    position: relative;
+    padding: 40px 280px 40px 280px;
+    text-align: center;
+}
+
+
+#botonLetras button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 9px 9px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+
+#botonesDeJuego {
+    position: relative;
+    text-align: center;
+}
+
+#botonObtenerPalabra,
+#botonAbandonarJuego {
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    border-radius: 9px;
+    background-color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #F3F5FC;
+}
+
+#div-botones-ingresar-palabra {
+    position: relative;
+    text-align: center;
+}
+
+#botonGuardarEmpezar {
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    top: 725px;
+    color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+#botonCancelar {
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    background: #F3F5FC;
+    border-radius: 24px;
+    top: 725px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#ingresarPalabra {
+    background-color: #F3F5FC;
+    position: absolute;
+    outline: none;
+    border: 0px;
+    left: 350px;
+    top: 180px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+#info {
+    position: absolute;
+    left: 350px;
+    top: 420px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+#div-iniciar-juego {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#botonIniciarJuego {
+    position: absolute;
+    padding: 24px;
+    gap: 8px;
+    width: 317px;
+    height: 114px;
+    transform: translateX(-50%);
+    background: #0A3871;
+    border-radius: 24px;
+    top: 257px;
+    color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#botonAgregarNuevaPalabra {
+    position: absolute;
+    padding: 24px;
+    gap: 8px;
+    width: 280px;
+    height: 67px;
+    transform: translateX(-50%);
+    background: #F3F5FC;
+    border-radius: 24px;
+    top: 404px;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#div-jugar-ahorcado {
+    padding-bottom: 30px;
+}
+#div-ingresar-palabra {
+    padding-bottom: 30px;
+}
+
+/*---------footer-----------*/
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0A3871;
+}
+
+.footer-div-contendor {
+    display: block;
+}
+
+.footer-div-div-contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-div-div-div-contenedor-sobre {
+    padding: 10px 30px;
+}
+
+.footer-div-div-div-contenedor-empresa {
+    padding: 10px 0;
+}
+
+#logo-dino-dev {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-div-div-contenedor-logos {
+    display: flex;
+    justify-content: center;
+}
+
+#logos {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-div-contenedor p {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;900&family=Montserrat+Alternates&display=swap"
+        rel="stylesheet">
+    <link />
+    <title>Juego del ahorcado</title>
+</head>
+
+<body>
+    <header>
+        <img id="logoAlura" src="img/logoAlura.png" />
+        <h1>JUEGO DEL AHORCADO</h1>
+    </header>
+
+    <main>
+        <!--LIENZO DE DISEÑO-->
+        <div id="div-lienzo-canvas">
+            <canvas id="canvas" width="300px" height="400px"> </canvas>
+        </div>
+        <!--INICIAR JUEGO-->
+        <div id="div-iniciar-juego">
+            <button id="botonIniciarJuego" onclick="mostrarPantallaJugarAhorcado()">Iniciar juego</button>
+            <button id="botonAgregarNuevaPalabra" onclick="mostrarPantallaIngresarPalabra()">Agregar nueva
+                palabra</button>
+        </div>
+
+        <!--INGRESAR PALABRA-->
+        <div id="div-ingresar-palabra">
+            <div>
+                <input type="text" id="ingresarPalabra" placeholder="Ingresar palabra..." pattern="^[A-Za-z]+$"
+                    minlength="4" maxlength="15" size="17">
+            </div>
+            <div>
+                <label id="info">&#9432; Min. de 4 letras y max. de 15 letras.</label>
+            </div>
+            <div id="div-botones-ingresar-palabra">
+                <button id="botonGuardarEmpezar" onclick="guardarPalabraMostrarPantallaJugarAhorcado()">Guardar y
+                    empezar</button>
+                <button id="botonCancelar" onclick="mostrarPantallaIniciarJuego()">Cancelar</button>
+            </div>
+        </div>
+
+        <!--JUEGO DEL AHORCADO-->
+        <div id="div-jugar-ahorcado">
+
+            <p id="mensajeGP"></p>
+            <p id="palabraAdivinar"></p>
+
+            <div id="botonLetras">
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>I</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>M</button>
+                <button>N</button>
+                <button>Ñ</button>
+                <button>O</button>
+                <button>P</button>
+                <button>Q</button>
+                <button>R</button>
+                <button>S</button>
+                <button>T</button>
+                <button>U</button>
+                <button>V</button>
+                <button>W</button>
+                <button>X</button>
+                <button>Y</button>
+                <button>Z</button>
+            </div>
+
+            <div id="botonesDeJuego">
+                <button id="botonObtenerPalabra" onclick="obtenerPalabraSecreta()">Obtener Palabra</button>
+                <button id="botonAbandonarJuego" onclick="mostrarPantallaIniciarJuego()">Abandonar Juego</button>
+            </div>
+        </div>
+
+    </main>
+        <footer>
+            <div class="footer-div-contenedor">
+                <div class="footer-div-div-contenedor">
+                    <div class="footer-div-div-contenedor-logoDinoDev">
+                        <img id="logo-dino-dev" src="img/logoDinoDev.png" />
+                    </div>
+                    <div class="footer-div-div-div-contenedor-sobre">
+                        <h3>Acerca de</h3>
+                        <ul>
+                            <li><a>Empresa</a></li>
+                            <li><a>Equipo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-div-div-div-contenedor-empresa">
+                        <h3>Challenge aluraONE - Sprint 02</h3>
+                        <p>Proyecto del juego del ahorcado para poner en práctica lo aprendido a lo largo de la formación en HTML5, CSS3 y JAVASCRIPT.</p>
+                    </div>
+                </div>
+                <div class="footer-div-div-contenedor-logos">
+                    <a href="http://www.linkedin.com/in/emilio-elias-03341623a"><img id="logos" src="img/logoLinkedIn.png" /></a>
+                    <a href="https://msng.link/o/?emilioe375=ig"><img id="logos" src="img/logoInstagram.png" /></a>
+                    <img id="logos" src="img/logoGitHub.png"/>
+                </div>
+                <p class="copyright"><b>Dino</b> Dev. - Emilio Elias © 2022</p>
+            </div>
+        </footer>
+    
+
+    <script src="juego.js"></script>
+</body>
+
+</html>
