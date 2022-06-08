@@ -1,7 +1,7 @@
 # Challenge02_aluraONE
 Sprint02 - Juego del ahorcado
 
-Proyecto de juego del ahorcado para poner en práctica lo que aprendido a lo largo de esta formación Principiante en Programación.
+Proyecto de juego del ahorcado para poner en práctica lo aprendido a lo largo de la formación de Principiante en Programación.
 
 Requisitos:
 - Debe funcionar solo con letras mayúsculas;
